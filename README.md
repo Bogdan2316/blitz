@@ -36,7 +36,7 @@ go mod tidy
 go build -o blitz.exe .
 ```
 
-Or simply double-click `build.bat`
+Simply double-click `build.bat`
 
 #### Linux/macOS Users
 Build Blitz by running:
@@ -45,7 +45,7 @@ go mod tidy
 go build -o blitz .
 ```
 
-Or simply run:
+Or run:
 ```bash
 ./setup.sh
 ```
