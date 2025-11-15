@@ -119,10 +119,6 @@ This tool is for authorized penetration testing only. Unauthorized access to com
 ### License
 MIT License
 
-### Acknowledgments
-- Built with Go for performance and concurrency
-- Thanks to all contributors
-
 ### Contact
 - GitHub: [github.com/staxsum/blitz](https://github.com/staxsum/blitz)
 - Issues: [github.com/staxsum/blitz/issues](https://github.com/staxsum/blitz/issues)
