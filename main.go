@@ -19,8 +19,7 @@ const banner = `
 ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
                                      
   Fast Web Form Cracking
-  BY: stax 
-  https://github.com/staxsum/blitz
+  https://github.com/lucky89144/blitz
 `
 
 var (
