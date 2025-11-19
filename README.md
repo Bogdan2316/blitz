@@ -21,7 +21,7 @@ Blitz is a modern, lightning-fast login page bruteforcer written in Go.
 
 Open your terminal and enter:
 ```bash
-git clone https://github.com/staxsum/blitz
+git clone https://github.com/lucky89144/blitz
 ```
 
 Now enter the following command:
