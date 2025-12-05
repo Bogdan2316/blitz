@@ -1,24 +1,391 @@
-# Common usernames for security testing
-# SQL Injection test strings
-'or' '='
-' or true--
+# ==============================================
+# Blitz - Modern Login Bruteforcer
+# ==============================================
 
-# Default accounts
-root
+# ------------------------------------------------------------------
+# CATEGORY 1: SYSTEM & DEFAULT ACCOUNTS
+# ------------------------------------------------------------------
 admin
+administrator
+root
+user
 test
 guest
-info
-adm
-mysql
-user
-administrator
-oracle
-ftp
-postgres
-webmaster
-backup
 demo
+backup
 support
 service
-monitor
+info
+adm
+sysadmin
+webadmin
+webmaster
+operator
+supervisor
+manager
+hostmaster
+postmaster
+
+# ------------------------------------------------------------------
+# CATEGORY 2: DATABASE & SERVICE ACCOUNTS
+# ------------------------------------------------------------------
+mysql
+postgres
+oracle
+mongodb
+redis
+sqlserver
+mssql
+dbadmin
+dba
+database
+ftp
+sftp
+ssh
+vpn
+mail
+email
+smtp
+pop
+imap
+
+# ------------------------------------------------------------------
+# CATEGORY 3: PLATFORM-SPECIFIC (Cloud, OS, Container)
+# ------------------------------------------------------------------
+# Linux/Unix Systems
+ubuntu
+centos
+debian
+fedora
+redhat
+linux
+unix
+
+# Cloud Providers
+azureuser
+ec2-user
+gcp
+aws
+google
+digitalocean
+linode
+vultr
+
+# Container/Orchestration
+docker
+kube
+kubernetes
+jenkins
+ansible
+git
+gitlab
+github
+
+# ------------------------------------------------------------------
+# CATEGORY 4: APPLICATION & FRAMEWORK ACCOUNTS
+# ------------------------------------------------------------------
+# Web Servers
+nginx
+apache
+tomcat
+iis
+www
+www-data
+http
+https
+
+# CMS/Platforms
+wordpress
+joomla
+drupal
+magento
+prestashop
+shopify
+woocommerce
+
+# Development
+dev
+developer
+deploy
+stage
+staging
+prod
+production
+beta
+alpha
+
+# ------------------------------------------------------------------
+# CATEGORY 5: BUSINESS/ORGANIZATIONAL ACCOUNTS
+# ------------------------------------------------------------------
+office
+staff
+employee
+hr
+humanresources
+finance
+accounting
+sales
+marketing
+it
+techsupport
+helpdesk
+customer
+client
+partner
+vendor
+supplier
+
+# ------------------------------------------------------------------
+# CATEGORY 6: COMMON FIRST/LAST NAMES (Top 50)
+# ------------------------------------------------------------------
+# Male
+john
+james
+robert
+michael
+william
+david
+richard
+charles
+joseph
+thomas
+christopher
+daniel
+paul
+mark
+donald
+george
+kenneth
+steven
+edward
+brian
+ronald
+anthony
+kevin
+jason
+matthew
+gary
+timothy
+jose
+larry
+jeffrey
+frank
+scott
+eric
+stephen
+andrew
+raymond
+gregory
+joshua
+jerry
+dennis
+walter
+patrick
+peter
+harold
+douglas
+henry
+carl
+arthur
+ryan
+roger
+
+# Female
+mary
+patricia
+jennifer
+linda
+elizabeth
+barbara
+susan
+jessica
+sarah
+karen
+nancy
+lisa
+margaret
+betty
+sandra
+ashley
+dorothy
+kimberly
+emily
+donna
+michelle
+carol
+amanda
+melissa
+deborah
+stephanie
+rebecca
+laura
+sharon
+cynthia
+kathleen
+amy
+shirley
+angela
+helen
+anna
+brenda
+pamela
+nicole
+christine
+samantha
+emma
+ruth
+catherine
+debra
+virginia
+rachel
+carolyn
+janet
+maria
+
+# ------------------------------------------------------------------
+# CATEGORY 7: EMAIL PATTERNS & COMBINATIONS
+# ------------------------------------------------------------------
+admin@example.com
+administrator@example.com
+root@localhost
+webmaster@domain.com
+info@company.com
+support@company.com
+contact@company.com
+sales@company.com
+billing@company.com
+help@company.com
+
+# Common Email Prefixes
+admin.
+administrator.
+webmaster.
+info.
+support.
+contact.
+sales.
+billing.
+help.
+service.
+
+# ------------------------------------------------------------------
+# CATEGORY 8: COMMON VARIATIONS & PATTERNS
+# ------------------------------------------------------------------
+# Case Variations
+Admin
+ADMIN
+Administrator
+ADMINISTRATOR
+
+# L33t/Modified Variations
+4dm1n
+@dmin
+adm1n
+r00t
+adm!n
+root!
+admin_
+_admin
+.admin
+-admin
+
+# Number Suffixes
+admin1
+admin2
+admin3
+admin01
+admin02
+admin03
+admin001
+admin002
+admin003
+admin2019
+admin2020
+admin2021
+admin2022
+admin2023
+admin2024
+admin2025
+
+# Common Prefix/Suffix Combinations
+user.admin
+admin.user
+admin.admin
+admin.sys
+admin.it
+admin.network
+admin.web
+admin.server
+admin.database
+admin.security
+
+# ------------------------------------------------------------------
+# CATEGORY 9: COUNTRY/LANGUAGE SPECIFIC
+# ------------------------------------------------------------------
+# Spanish/Portuguese
+administrador
+usuario
+utilizador
+convidado
+
+# French
+administrateur
+utilisateur
+invité
+
+# German
+administrator
+benutzer
+gast
+
+# Italian
+amministratore
+utente
+ospite
+
+# ------------------------------------------------------------------
+# CATEGORY 10: GENERIC & PLACEHOLDER ACCOUNTS
+# ------------------------------------------------------------------
+user1
+user2
+user3
+test1
+test2
+test3
+demo1
+demo2
+demo3
+guest1
+guest2
+guest3
+temp
+temporary
+default
+standard
+basic
+general
+public
+anonymous
+anon
+nobody
+
+# ------------------------------------------------------------------
+# CATEGORY 11: COMMON ACCOUNT TYPES
+# ------------------------------------------------------------------
+api
+api-user
+service-account
+bot
+system
+daemon
+app
+application
+client
+server
+host
+node
+instance
+container
+vm
+virtual
+cloud
